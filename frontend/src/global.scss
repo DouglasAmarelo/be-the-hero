@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #f0f0f5;
+  font: 400 14px Roboto, sans-serif;
+}
+
+input,
+button,
+textarea {
+  font: 400 18px Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  input,
+  textarea {
+    border: 1px solid #dcdce6;
+    color: #333;
+    padding: 0 24px;
+  }
+}
+
+form input,
+form textarea,
+.button {
+  border-radius: 8px;
+  height: 60px;
+  width: 100%;
+}
+
+form textarea {
+  height: auto;
+  line-height: 24px;
+  min-height: 140px;
+  padding: 16px 24px;
+  resize: vertical;
+}
+
+.button {
+  background: #e02041;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+.link {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: #41414d;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
